@@ -180,6 +180,7 @@
 @media screen and (max-width: $md) {
   .container {
     display: block;
+    margin-top: 70px;
     &__title {
       font-size: 33px;
       line-height: 30px;

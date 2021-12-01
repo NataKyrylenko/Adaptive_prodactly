@@ -1,6 +1,6 @@
 .footer {
   padding: 90px 5px 100px 5px;
-  margin-top: 200px;
+  margin-top: 146px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,6 +9,8 @@
 @media screen and (max-width: $md) {
   .footer {
     display: block;
+    margin-top: 70px;
+    padding: 50px 5px;
     &__nav {
       display: flex;
       justify-content: flex-start;
@@ -17,6 +19,6 @@
   }
   .footer__field {
     width: 250px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }

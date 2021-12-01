@@ -511,6 +511,7 @@ img {
 @media screen and (max-width: 767px) {
   .container {
     display: block;
+    margin-top: 70px;
   }
   .container__title {
     font-size: 33px;
@@ -525,7 +526,7 @@ img {
 }
 .footer {
   padding: 90px 5px 100px 5px;
-  margin-top: 200px;
+  margin-top: 146px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -535,6 +536,8 @@ img {
 @media screen and (max-width: 767px) {
   .footer {
     display: block;
+    margin-top: 70px;
+    padding: 50px 5px;
   }
   .footer__nav {
     display: flex;
@@ -544,6 +547,6 @@ img {
 
   .footer__field {
     width: 250px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
