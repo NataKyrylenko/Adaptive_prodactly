@@ -1,0 +1,22 @@
+.footer {
+  padding: 90px 5px 100px 5px;
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 2px solid $grey;
+}
+@media screen and (max-width: $md) {
+  .footer {
+    display: block;
+    &__nav {
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+    }
+  }
+  .footer__field {
+    width: 250px;
+    margin-top: 30px;
+  }
+}

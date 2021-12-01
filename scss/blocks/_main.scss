@@ -1,0 +1,194 @@
+@mixin h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  color: $dark;
+}
+@mixin title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: $dark;
+}
+@mixin pretitle {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: $dark;
+}
+@mixin banner {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $brown;
+}
+@mixin text {
+  font-size: 16px;
+  line-height: 26px;
+  color: $brown;
+}
+.main {
+  padding: 90px 0 0 0;
+}
+.banner {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  &__div {
+    width: 46%;
+  }
+  &__title {
+    @include h1;
+    margin-bottom: 30px;
+    padding: 5px;
+  }
+  &__text {
+    @include banner;
+  }
+  &__image {
+    width: 53.72%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: $md) {
+  .banner {
+    display: block;
+    &__div {
+      width: 100%;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    &__image {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+.feature {
+  padding-left: 10px;
+  &__title {
+    @include title;
+    margin: 110px auto 45px;
+    padding: 5px;
+    max-width: 540px;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  &__content-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 23%;
+  }
+
+  &__content-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__content-title {
+    @include pretitle;
+    padding: 30px 5px 13px;
+  }
+}
+@media screen and (max-width: $md) {
+  .feature__title {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 50px auto 20px;
+  }
+  .feature__content {
+    display: inline-flex;
+
+    &-icon {
+      width: 30px;
+      height: 30px;
+    }
+    &-col {
+      width: 47%;
+      margin-bottom: 20px;
+      border: 1px solid $orange;
+      border-radius: 4px;
+    }
+    &-title {
+      padding-top: 5px;
+    }
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 140px;
+  &__div {
+    width: 43.78%;
+  }
+  .container__box {
+    margin-top: 30px;
+  }
+  &__text {
+    @include text;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    &_bold {
+      font-weight: 700;
+      color: $dark;
+    }
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 22px;
+  }
+
+  &__image {
+    width: 47.77%;
+    object-fit: cover;
+  }
+  &__box-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &::before {
+      content: "\2713";
+      width: 35px;
+      height: 35px;
+      border-radius: 14px;
+      background-color: $orange;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 30px;
+      box-sizing: border-box;
+      padding: 14px;
+    }
+  }
+}
+@media screen and (max-width: $md) {
+  .container {
+    display: block;
+    &__title {
+      font-size: 33px;
+      line-height: 30px;
+    }
+    &__div {
+      width: 100%;
+    }
+    &__image {
+      width: 100%;
+    }
+  }
+}

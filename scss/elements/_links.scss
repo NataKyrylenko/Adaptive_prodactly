@@ -1,0 +1,53 @@
+@mixin footer-link {
+  font-size: 16px;
+  line-height: 35px;
+  color: $brown;
+}
+.header__list {
+  list-style: none;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.header__link {
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 28px;
+  color: $dark;
+}
+@media screen and (max-width: $l) {
+  .header__list {
+    display: block;
+    text-align: center;
+  }
+  .header__link {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.banner {
+  &__icon-link {
+    color: $orange;
+    margin-left: 30px;
+  }
+  &__links {
+    margin-top: 45px;
+  }
+}
+@media screen and (max-width: $md) {
+  .banner__icon-link {
+    display: block;
+    margin-top: 10px;
+  }
+}
+.footer {
+  &__nav {
+    padding: 60px 10px 10px 90px;
+  }
+  &__nav-list {
+    list-style-type: none;
+  }
+  &__nav-link {
+    @include footer-link;
+  }
+}

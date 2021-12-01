@@ -1,0 +1,68 @@
+@mixin text-btn {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $white;
+}
+.header__button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.btn {
+  @include text-btn;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  background-color: $orange;
+}
+.menu {
+  &__button-link {
+    padding: 10px 22px;
+    width: 110px;
+    height: 46px;
+
+    &_signin {
+      width: 102px;
+      color: $black;
+      background-color: $white;
+      border: 1px solid $grey;
+      margin-right: 14px;
+    }
+  }
+}
+.banner {
+  &__button {
+    display: inline;
+    padding: 15px 41px 14px;
+    width: 93px;
+  }
+}
+
+.feature {
+  &__button {
+    width: 175px;
+    height: 53px;
+    text-align: center;
+    padding: 15px 32px 14px 34px;
+    margin: 0 auto;
+  }
+}
+.footer {
+  &__button {
+    width: 131px;
+    height: 39px;
+    padding: 8px 15px 7px 15px;
+    border-style: none;
+  }
+  &__field {
+    margin-top: 91px;
+    margin-bottom: 21px;
+    border-radius: 4px;
+    width: 325px;
+    height: 48px;
+    border: 1px solid $grey;
+    background: $white;
+  }
+}
